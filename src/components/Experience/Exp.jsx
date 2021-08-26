@@ -35,7 +35,7 @@ const Exp = () => {
                                       <Fade bottom duration={1000} delay={600} distance="30px">
                                         <div className="exp-wrapper__image">
                                            {/* <AboutImg alt="profile picture" filename={img} />  */}
-                              <h1>Campus24 Web Devloper - Internship</h1> 
+                              <h1>Campus24 Web Developer - Internship</h1> 
                                         </div>
                                       </Fade>
                                     </Col> 
