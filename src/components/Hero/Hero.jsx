@@ -28,12 +28,18 @@ const Header = () => {
           <h1 className="hero-title">
             {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Akshad Nayakwadi'}</span>
-            <br />
-             {subtitle || "I'm the Frontend Web Developer."}
+            
+             {}
             
          
     
           </h1>
+          <Typical
+        steps={["I'm Coder", 2000, "I'm Developer", 2000]}
+        className="hero-title"
+        loop={Infinity}
+        wrapper="h1"
+      />
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
@@ -43,6 +49,7 @@ const Header = () => {
               </Link>
             </span>
           </p>
+         
         </Fade>
       </Container>
     </section>

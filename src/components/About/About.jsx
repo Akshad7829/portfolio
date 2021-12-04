@@ -4,8 +4,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
-
-
+import codechef from "./codechef.jpeg"
+import cf from "./cf.png"
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
@@ -35,6 +35,7 @@ const About = () => {
               </div>
             </Fade>
           </Col>
+          
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
@@ -62,10 +63,11 @@ const About = () => {
                   </span>
                 )}
               </div>
-            </Fade>
-          </Col>
-        </Row>
+              </Fade>
+ </Col>       
+  </Row> 
       </Container>
+   
     </section>
   );
 };
@@ -76,3 +78,28 @@ export default About;
 //             begin my Carrer in
 //             high-level Professional<br></br> 
 //             I have gained experience in <br></br> Front-End Web development. Please feel<br></br>  free to contact. Cheers !!!
+
+// {/* <Fade bottom duration={1000} delay={600} distance="30px">
+// <div className="project-wrapper__text-title">
+//    {/* <AboutImg alt="profile picture" filename={img} />  */}
+// <h1>Competitive Programing</h1> 
+// </div>
+
+
+// <div class="row">
+// <div class="column">
+// <img src={codechef} alt="Snow" style={{width:"65%"}}/>
+// </div>
+// <div class="column">
+// <img src={cf} alt="Forest" style={{width:"65%"}}/>
+// </div>
+// </div>
+// <div class="row">
+// <div class="column">
+// <img src={codechef} alt="Snow" style={{width:"65%"}}/>
+// </div>
+// <div class="column">
+// <img src={cf} alt="Forest" style={{width:"65%"}}/>
+// </div>
+// </div>
+// </Fade> */}
